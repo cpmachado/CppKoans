@@ -1,6 +1,6 @@
 #CppKoans
 
-Inspired by [RubyKoans](https://github.com/edgecase/ruby_koans) and 
+Inspired by [RubyKoans](https://github.com/edgecase/ruby_koans) and
 [JavaScript-Koans](https://github.com/liammclennan/JavaScript-Koans), this is
 an attempt to write such koans for C/C++.
 
@@ -13,28 +13,28 @@ And of course a C++ compiler.
 I just tested it with a recent GCC.
 
 ##How to walk the path to enlightment
-1. Get the sources
+
+1.  Get the sources
 
         git clone git://github.com/torbjoernk/CppKoans.git
 
-2. Create a build directory
+2.  Create a build directory
 
         cd CppKoans
         mkdir build
         cd build
 
-3. Configure the build
+3.  Configure the build
 
         cmake ..
 
-4. Compile
+4.  Compile
 
         make
 
-5. Run
+5.  Run
 
         ./CppKoans
-
 
 Now follow the instructions printed from the very beginning.
 
@@ -48,7 +48,6 @@ Thus, walking the path to enlightment is a repetition of these steps:
 2. Compile in `CppKoans/build` by running `make`
 
 3. Read the master's reply with `./CppKoans/build/CppKoans`
-
 
 ##Adding further Koans
 ###To existing episodes
@@ -69,7 +68,6 @@ After copying and renaming of `~/headers/koanXX_sample_koans.hpp` and
 2. add the header file to `~/headers/all_koans.hpp`
 
 3. enable and activate the new episode in `~/cppkoans.cpp`
-
 
 ##Licence
 MIT License Copyright 2012 Torbjörn Klatt - opensource eht torbjoern minus klatt dot de

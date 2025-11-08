@@ -13,3 +13,12 @@ build/
 *.lai
 *.la
 *.a
+
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+koans/CMakeFiles/
+koans/Makefile
+koans/cmake_install.cmake
+CppKoans

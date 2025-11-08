@@ -34,44 +34,44 @@ using namespace std;
  */
 int main()
 {
-  KoanHandler status;
+    KoanHandler status;
 
-  // Koan 00: getting started
-  Koan00_get_started koan00 = Koan00_get_started( &status );
+    // Koan 00: getting started
+    Koan00_get_started koan00 = Koan00_get_started( &status );
 
-  // Koan 01: number types
-  Koan01_number_types koan01 = Koan01_number_types( &status );
+    // Koan 01: number types
+    Koan01_number_types koan01 = Koan01_number_types( &status );
 
-  // Koan 02: character types
-  Koan02_character_types koan02 = Koan02_character_types( &status );
+    // Koan 02: character types
+    Koan02_character_types koan02 = Koan02_character_types( &status );
 
-  // Koan 03: further types
-  Koan03_further_types koan03 = Koan03_further_types( &status );
+    // Koan 03: further types
+    Koan03_further_types koan03 = Koan03_further_types( &status );
 
-  // Koan 04: arrays
-  Koan04_arrays koan04 = Koan04_arrays( &status );
-  
-  // Koan 05: pointers
-  Koan05_pointers koan05 = Koan05_pointers( &status );
+    // Koan 04: arrays
+    Koan04_arrays koan04 = Koan04_arrays( &status );
 
-  // Koan XX: sample koans
+    // Koan 05: pointers
+    Koan05_pointers koan05 = Koan05_pointers( &status );
+
+    // Koan XX: sample koans
 //   KoanXX_sample_koans koanXX = KoanXX_sample_koans( &status );
 
-  // Welcome message
-  status.start();
+    // Welcome message
+    status.start();
 
-  // The Path of Enlightment
-  koan00.run();
-  koan01.run();
-  koan02.run();
-  koan03.run();
-  koan04.run();
-  koan05.run();
+    // The Path of Enlightment
+    koan00.run();
+    koan01.run();
+    koan02.run();
+    koan03.run();
+    koan04.run();
+    koan05.run();
 //   koanXX.run();
 
-  // Done.
-  status.end();
-  return( 0 );
+    // Done.
+    status.end();
+    return( 0 );
 }
 
 // EOF

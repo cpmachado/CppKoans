@@ -36,13 +36,12 @@ using namespace std;
 /**
  *
  */
-class KoanHandler
-{
-  private:
+class KoanHandler {
+private:
     int total_num_koans;    //!
     int total_num_passed;   //!
 
-  public:
+public:
     /**
      *
      */
@@ -78,7 +77,7 @@ class KoanHandler
      */
     void episode_done( string order );
 
-  private:
+private:
     /**
      *
      */

@@ -29,18 +29,19 @@
 #include <sstream>
 #include <string>
 
-class FillMeInException
-{
-  public:
+class FillMeInException {
+public:
     std::string file;
     int line;
     std::string msg;
     std::string expect;
-    FillMeInException( const std::string f, const int l, std::string s ) : file( f ), line( l ), msg( s ) {
-      file = file.substr( file.find_last_of( "/" ) + 1 );
+    FillMeInException( const std::string f, const int l, std::string s ) : file( f ), line( l ), msg( s )
+    {
+        file = file.substr( file.find_last_of( "/" ) + 1 );
     }
-    FillMeInException( const std::string f, const int l, std::string s, std::string e ) : file( f ), line( l ), msg( s ), expect( e ) {
-      file = file.substr( file.find_last_of( "/" ) + 1 );
+    FillMeInException( const std::string f, const int l, std::string s, std::string e ) : file( f ), line( l ), msg( s ), expect( e )
+    {
+        file = file.substr( file.find_last_of( "/" ) + 1 );
     }
     ~FillMeInException() {}
 };

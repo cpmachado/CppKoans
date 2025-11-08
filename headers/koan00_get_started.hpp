@@ -33,18 +33,18 @@ using namespace std;
 /**
   *
   */
-class Koan00_get_started : Koan
-{
-  private:
+class Koan00_get_started : Koan {
+private:
     KoanHandler *status;                //!
     static const int num_tests = 1;     //!
 
-  public:
+public:
     /**
      *
      */
-    Koan00_get_started( KoanHandler *status ) : status( status ) {
-      status->register_koans( num_tests );
+    Koan00_get_started( KoanHandler *status ) : status( status )
+    {
+        status->register_koans( num_tests );
     }
     /**
      *
@@ -54,15 +54,16 @@ class Koan00_get_started : Koan
     /**
      *
      */
-    void run() {
-      status->episode_start( "first" );
-      
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan00_get_started::cpp_is_not_too_hard ) );
-      
-      status->episode_done( "first" );
+    void run()
+    {
+        status->episode_start( "first" );
+
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan00_get_started::cpp_is_not_too_hard ) );
+
+        status->episode_done( "first" );
     }
 
-  private:
+private:
     void cpp_is_not_too_hard();
 };
 

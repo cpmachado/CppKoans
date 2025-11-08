@@ -30,8 +30,8 @@
 
 void KoanXX_sample_koans::a_sample_koan()
 {
-  bool test = false;
-  ASSERT_EQUAL( test, true );
+    bool test = false;
+    ASSERT_EQUAL( test, true );
 }
 
 // EOF

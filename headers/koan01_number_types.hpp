@@ -31,18 +31,18 @@
 /**
  *
  */
-class Koan01_number_types : Koan
-{
-  private:
+class Koan01_number_types : Koan {
+private:
     KoanHandler *status;                //!
     static const int num_tests = 8;     //!
 
-  public:
+public:
     /**
      *
      */
-    Koan01_number_types( KoanHandler *status ) : status( status ) {
-      status->register_koans( num_tests );
+    Koan01_number_types( KoanHandler *status ) : status( status )
+    {
+        status->register_koans( num_tests );
     }
     /**
      *
@@ -52,29 +52,31 @@ class Koan01_number_types : Koan
     /**
      *
      */
-    void run() {
-      status->episode_start( "second" );
-      
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::simple_integer_numbers ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::integers_have_a_size ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::integers_can_be_negative ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::simple_floats ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::floats_have_a_size ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::going_double_precision ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::doubles_have_a_size ) );
-      status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::size_of_biggest_number ) );
+    void run()
+    {
+        status->episode_start( "second" );
 
-      status->episode_done( "second" );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::simple_integer_numbers ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::integers_have_a_size ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::integers_can_be_negative ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::simple_floats ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::floats_have_a_size ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::going_double_precision ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::doubles_have_a_size ) );
+        status->eval_koan( *this, static_cast<void ( Koan:: * )()>( &Koan01_number_types::size_of_biggest_number ) );
+
+        status->episode_done( "second" );
     }
 
     /**
      *
      */
-    static int get_num_tests() {
-      return num_tests;
+    static int get_num_tests()
+    {
+        return num_tests;
     }
 
-  private:
+private:
     // REMARK: Do not forget to increase this.num_tests when you add another koan
     void simple_integer_numbers();
     void integers_have_a_size();
